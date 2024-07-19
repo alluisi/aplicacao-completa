@@ -5,7 +5,7 @@ export default function Inicio() {
     <div>
       <h1>Masterclass Next</h1>
       <nav>
-        <Link href={"/temp"}>Temp</Link>
+        <Link href={"/primeiro"}>Primeiro Componente</Link>
       </nav>
     </div>
   );
