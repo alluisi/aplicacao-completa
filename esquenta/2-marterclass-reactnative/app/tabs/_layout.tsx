@@ -33,6 +33,19 @@ export default function Layout(props: any) {
                     tabBarIcon: icone('settings-outline'),
                 }}
             />
+            <Tabs.Screen
+                name="mais"
+                options={{
+                    title: 'Opções',
+                    tabBarIcon: icone('menu'),
+                }}
+                listeners={{
+                    tabPress: (e) => {
+                        e.preventDefault()
+                        nav?.openDrawer()
+                    },
+                }}
+            />
         </Tabs>
     )
 }
