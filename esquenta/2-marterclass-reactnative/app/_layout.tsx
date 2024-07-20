@@ -16,6 +16,16 @@ export default function RootLayout() {
             ),
           }}
         />
+        <Drawer.Screen
+          name="primeiro"
+          options={{
+            drawerLabel: 'Primeiro Componente',
+            title: 'Primeiro Componente',
+            drawerIcon: () => (
+              <Ionicons name='heart-circle-outline' size={18} color='#3A98FF' />
+            ),
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );
