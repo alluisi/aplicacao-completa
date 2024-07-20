@@ -1,5 +1,5 @@
-import Caixa from "../components/Caixa";
-import Pagina from "../components/template/Pagina";
+import Caixa from "@/components/Caixa";
+import Pagina from "@/components/template/Pagina";
 
 export default function Page() {
     return (

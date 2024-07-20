@@ -1,4 +1,4 @@
-import Pagina from "../components/template/Pagina"
+import Pagina from "@/components/template/Pagina"
 
 export default function Primeiro() {
     const raio = 4.5

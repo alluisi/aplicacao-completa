@@ -1,5 +1,5 @@
+import Pagina from '@/components/template/Pagina';
 import { IconDashboard } from '@tabler/icons-react';
-import Pagina from "./components/template/Pagina";
 
 export default function Inicio() {
   return (
