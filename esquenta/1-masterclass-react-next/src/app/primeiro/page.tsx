@@ -1,5 +1,3 @@
-import Pagina from "@/components/template/Pagina"
-
 export default function Primeiro() {
     const raio = 4.5
     const PI = 3.14159
@@ -26,19 +24,17 @@ export default function Primeiro() {
     }
 
     return (
-        <Pagina>
-            <div>
-                {titulo}
-                <div className="flex flex-col">
-                    <span>{1 + 1}</span>
-                    <span>{Math.random()}</span>
-                    <span>{anoAtual()}</span>
-                </div>
-                {gerarUmaLista()}
-                <div>
-                    <span>{PI * Math.pow(raio, 2)}</span>
-                </div>
+        <div>
+            {titulo}
+            <div className="flex flex-col">
+                <span>{1 + 1}</span>
+                <span>{Math.random()}</span>
+                <span>{anoAtual()}</span>
             </div>
-        </Pagina>
+            {gerarUmaLista()}
+            <div>
+                <span>{PI * Math.pow(raio, 2)}</span>
+            </div>
+        </div>
     )
 }
