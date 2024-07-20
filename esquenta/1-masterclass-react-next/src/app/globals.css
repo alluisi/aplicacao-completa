@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.teste-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
