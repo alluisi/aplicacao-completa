@@ -17,3 +17,8 @@ Curso ofertado pela Cod3r para desenvolvimento de uma solução completa e integ
 
 
 [Repositório Cod3r](https://github.com/cod3rcursos/esquenta-julho-2024)
+
+### O curso
+
+-   [Pontapé Inicial](https://www.youtube.com/watch?v=PrYFHm9SxqQ) - 21/07/2024
+-   [Plataforma](https://escola.formacao.dev/)
