@@ -1,8 +1,11 @@
+GET http://localhost:3000/usuario
+
+###
 POST http://localhost:3000/usuario
 content-type: application/json
 
 {
-    "nome": "Alessandra Lamas Lusi",
-    "email": "alluisi@formacao.dev",
+    "nome": "Alessandra Lamas Lusi 2",
+    "email": "alluisi2@formacao.dev",
     "senha": "123456"
 }
