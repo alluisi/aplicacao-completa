@@ -2,6 +2,7 @@ import {
   Body,
   Controller,
   Get,
+  Param,
   Post,
 } from '@nestjs/common';
 import Usuario from './usuario.entity';
@@ -21,5 +22,11 @@ export class UsuarioController {
   async obterTodos() {
     const usuarios = await this.repo.obterTodos();
     return usuarios;
+  }
+
+  @Get(':id')
+  async obterPorId(@Param('id') id: string) {
+    const usuario = await this.repo.obterPorId(+id);
+    return usuario;
   }
 }
