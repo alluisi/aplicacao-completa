@@ -11,7 +11,16 @@ POST http://localhost:3000/usuario
 content-type: application/json
 
 {
-    "nome": "Alessandra Lamas Lusi 2",
+    "nome": "Alessandra Lamas Luisi 2",
     "email": "alluisi2@formacao.dev",
     "senha": "123456"
+}
+
+###
+PATCH http://localhost:3000/usuario/1
+content-type: application/json
+
+{
+    "nome": "Alessandra Lamas Luisi 3",
+    "email": "alluisi3@formacao.dev"
 }

@@ -4,6 +4,7 @@ import {
   Delete,
   Get,
   Param,
+  Patch,
   Post,
 } from '@nestjs/common';
 import Usuario from './usuario.entity';
@@ -23,6 +24,15 @@ export class UsuarioController {
   async obterTodos() {
     const usuarios = await this.repo.obterTodos();
     return usuarios;
+  }
+
+  @Patch(':id')
+  async atualizar(@Param('id') id: string, @Body() usuario: Usuario) {
+    const usuarioAtualizado = await this.repo.atualizar({
+      ...usuario,
+      id: +id,
+    });
+    return usuarioAtualizado;
   }
 
   @Get(':id')
