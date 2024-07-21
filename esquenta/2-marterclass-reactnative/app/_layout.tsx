@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Drawer screenOptions={{ headerShown: false}}>
+      <Drawer screenOptions={{ headerShown: false }}>
         <Drawer.Screen
           name="index"
           options={{
@@ -37,6 +37,16 @@ export default function RootLayout() {
           }}
         />
         <Drawer.Screen
+          name="formulario"
+          options={{
+            drawerLabel: 'Formulário',
+            title: 'Formulário',
+            drawerIcon: () => (
+              <Ionicons name='checkbox-outline' size={18} color='#3A98FF' />
+            ),
+          }}
+        />
+        <Drawer.Screen
           name="tabs"
           options={{
             drawerLabel: 'Tabs',
@@ -46,7 +56,7 @@ export default function RootLayout() {
             ),
           }}
         />
-      <Drawer.Screen
+        <Drawer.Screen
           name="stack"
           options={{
             drawerLabel: 'Stack',
@@ -58,5 +68,5 @@ export default function RootLayout() {
         />
       </Drawer>
     </GestureHandlerRootView>
-  );
+  )
 }
