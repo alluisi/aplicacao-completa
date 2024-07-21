@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   Param,
   Post,
@@ -28,5 +29,10 @@ export class UsuarioController {
   async obterPorId(@Param('id') id: string) {
     const usuario = await this.repo.obterPorId(+id);
     return usuario;
+  }
+
+  @Delete(':id')
+  async deletar(@Param('id') id: string) {
+    await this.repo.deletar(+id);
   }
 }
