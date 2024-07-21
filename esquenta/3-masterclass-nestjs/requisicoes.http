@@ -1,1 +1,8 @@
 POST http://localhost:3000/usuario
+content-type: application/json
+
+{
+    "nome": "Alessandra Lamas Lusi",
+    "email": "alluisi@formacao.dev",
+    "senha": "123456"
+}
