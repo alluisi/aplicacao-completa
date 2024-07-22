@@ -1,8 +1,15 @@
 # aplicacao-completa
 
+[![My Skills](https://skillicons.dev/icons?i=nextjs,react,nestjs,react,ts)](https://skillicons.dev)
+
 ## Formação DEV
 
 Curso ofertado pela Cod3r para desenvolvimento de uma solução completa e integrada com frontend, backend e mobile
+- NextJS
+- React
+- NestJS
+- React Native
+- Typescript
 
 
 [Inscrição para o Evento](http://inscricao.formacao.dev)
@@ -21,4 +28,4 @@ Curso ofertado pela Cod3r para desenvolvimento de uma solução completa e integ
 ### O curso
 
 -   [Pontapé Inicial](https://www.youtube.com/watch?v=PrYFHm9SxqQ) - 21/07/2024
--   [Plataforma](https://escola.formacao.dev/)
+-   [Plataforma](https://escola.formacao.dev/) - Projeto Barbearia - 22 a 28/07/2024
