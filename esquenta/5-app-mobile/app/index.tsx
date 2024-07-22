@@ -9,7 +9,12 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text style={{ fontFamily: 'SOLARSPACEDEMO-Regular' }}>
+        Teste da fonte SOLARSPACEDEMO-Regular
+      </Text>
+      <Text style={{ fontFamily: 'SPACEMISSION' }}>
+        Teste da fonte SPACEMISSION
+      </Text>
     </View>
   );
 }
