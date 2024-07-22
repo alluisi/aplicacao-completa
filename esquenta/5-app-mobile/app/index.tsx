@@ -1,16 +1,18 @@
-import Pergunta from "@/components/questionario/Pergunta";
-import Logo from "@/components/template/Logo";
-import Pagina from "@/components/template/Pagina";
-import perguntas from "@/data/constants/perguntas";
-import { View } from "react-native";
+import { View } from 'react-native'
+import Logo from '@/components/template/Logo'
+import Pagina from '@/components/template/Pagina'
+import Pergunta from '@/components/questionario/Pergunta'
+import useQuestionario from '@/data/hooks/useQuestionario'
 
 export default function Index() {
-  return (
-    <Pagina>
-      <View  style={{ gap: 40 }}>
-        <Logo />
-        <Pergunta pergunta={perguntas[0]}/>
-      </View>
-    </Pagina>
-  );
+    const { pergunta, responder } = useQuestionario()
+
+    return (
+        <Pagina>
+            <View style={{ gap: 40 }}>
+                <Logo />
+                <Pergunta pergunta={pergunta} opcaoSelecionada={responder} />
+            </View>
+        </Pagina>
+    )
 }

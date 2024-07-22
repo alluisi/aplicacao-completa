@@ -5,6 +5,7 @@ import Opcao from './Opcao'
 
 export interface PerguntaProps {
     pergunta: PerguntaModel
+    opcaoSelecionada: (indice: number) => void
 }
 
 export default function Pergunta(props: PerguntaProps) {
@@ -17,7 +18,7 @@ export default function Pergunta(props: PerguntaProps) {
                         key={indice}
                         indice={indice}
                         texto={opcao}
-                        onPress={() => {}}
+                        onPress={() => props.opcaoSelecionada(indice)}
                     />
                 ))}
             </View>
