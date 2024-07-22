@@ -1,5 +1,6 @@
 import PerguntaModel from '@/data/model/Pergunta'
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
+import Enunciado from './Enunciado'
 
 export interface PerguntaProps {
     pergunta: PerguntaModel
@@ -8,7 +9,7 @@ export interface PerguntaProps {
 export default function Pergunta(props: PerguntaProps) {
     return (
         <View>
-            <Text style={{ color: '#fff' }}>{props.pergunta.enunciado}</Text>
+            <Enunciado enunciado={props.pergunta.enunciado} />
         </View>
     )
 }
