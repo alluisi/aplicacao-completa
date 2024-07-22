@@ -4,10 +4,12 @@ import ContextoCarrinho from "@/data/contexts/ContextoCarrinho";
 import { useContext } from "react";
 
 export default function Home() {
-  const { numero } = useContext(ContextoCarrinho)
+  const { numero, incrementar, decrementar } = useContext(ContextoCarrinho)
   return (
     <Pagina>
       <div>Início: {numero}</div>
+      <button onClick={incrementar}>Incrementar</button>
+      <button onClick={decrementar}>Decrementar</button>
     </Pagina>
   );
 }
