@@ -1,6 +1,7 @@
 'use client'
 import AreaItemCarrinho from '@/components/carrinho/AreaItemCarrinho'
 import CarrinhoVazio from '@/components/carrinho/CarrinhoVazio'
+import TotalCarrinho from '@/components/carrinho/TotalCarrinho'
 import Pagina from '@/components/template/Pagina'
 import useCarrinho from '@/data/hooks/UseCarrinho'
 
@@ -22,6 +23,7 @@ export default function PaginaCarrinho() {
                             />
                         ))}
                     </div>
+                    <TotalCarrinho itens={itens} />
                 </>
             )}
         </Pagina>
