@@ -1,20 +1,12 @@
-import { Text, View } from "react-native";
+import Pagina from "@/components/template/Pagina";
+import { Text } from "react-native";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text style={{ fontFamily: 'SOLARSPACEDEMO-Regular' }}>
-        Teste da fonte SOLARSPACEDEMO-Regular
-      </Text>
-      <Text style={{ fontFamily: 'SPACEMISSION' }}>
+    <Pagina>
+      <Text style={{ fontFamily: 'SPACEMISSION', color: '#fff' }}>
         Teste da fonte SPACEMISSION
       </Text>
-    </View>
+    </Pagina>
   );
 }
