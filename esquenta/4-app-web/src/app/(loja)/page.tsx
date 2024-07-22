@@ -1,10 +1,9 @@
 'use client'
 import Pagina from "@/components/template/Pagina";
-import ContextoCarrinho from "@/data/contexts/ContextoCarrinho";
-import { useContext } from "react";
+import useCarrinho from "@/data/hooks/UseCarrinho";
 
 export default function Home() {
-  const { numero, incrementar, decrementar } = useContext(ContextoCarrinho)
+  const { numero, incrementar, decrementar } = useCarrinho()
   return (
     <Pagina>
       <div>Início: {numero}</div>
