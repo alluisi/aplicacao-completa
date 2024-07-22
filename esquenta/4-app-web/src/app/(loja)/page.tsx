@@ -1,14 +1,16 @@
 'use client'
-import Pagina from "@/components/template/Pagina";
-import useCarrinho from "@/data/hooks/UseCarrinho";
+import CartaoProduto from '@/components/produto/CartãoProduto'
+import Pagina from '@/components/template/Pagina'
+import produtos from '@/data/constants/produtos'
 
 export default function Home() {
-  const { numero, incrementar, decrementar } = useCarrinho()
-  return (
-    <Pagina>
-      <div>Início: {numero}</div>
-      <button onClick={incrementar}>Incrementar</button>
-      <button onClick={decrementar}>Decrementar</button>
-    </Pagina>
-  );
+    return (
+        <Pagina>
+            <div className="flex gap-5 justify-center flex-wrap">
+                {produtos.map((produto) => (
+                    <CartaoProduto key={produto.id} produto={produto} />
+                ))}
+            </div>
+        </Pagina>
+    )
 }
