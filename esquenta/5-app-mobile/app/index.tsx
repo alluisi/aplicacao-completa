@@ -7,7 +7,7 @@ import { View } from "react-native";
 export default function Index() {
   return (
     <Pagina>
-      <View  style={{ gap: 20 }}>
+      <View  style={{ gap: 40 }}>
         <Logo />
         <Pergunta pergunta={perguntas[0]}/>
       </View>
