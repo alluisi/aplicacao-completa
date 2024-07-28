@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { StyleSheet, Text, View } from 'react-native'
 import Agendamento from './Agendamento'
-import Home from './Home'
+import Inicio from './Inicio'
 import Usuario from './Usuario'
 import Icone from '../components/shared/Icone'
 
@@ -50,7 +50,7 @@ export default function Principal({ navigation }: any) {
                 },
             }}
         >
-            {tab('Home', Home, 'Início', 'home-outline')}
+            {tab('Inicio', Inicio, 'Início', 'home-outline')}
             {tab('Agendamento', Agendamento, 'Agendamento', 'calendar-outline')}
             {tab('Usuario', Usuario, 'Usuário', 'person-outline')}
         </Tab.Navigator>

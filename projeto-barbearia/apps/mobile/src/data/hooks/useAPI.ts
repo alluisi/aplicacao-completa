@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 
-const URL_BASE = process.env.URL_BASE
+const URL_BASE = 'http://10.0.2.2:3001' // process.env.URL_BASE
 
 export default function useAPI() {
     console.log('URL_BASE', URL_BASE)
