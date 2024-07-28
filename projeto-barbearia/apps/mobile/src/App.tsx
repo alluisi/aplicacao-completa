@@ -14,7 +14,9 @@ export default function App() {
             <ProvedorAgendamento>
                 <NavigationContainer>
                     <Stack.Navigator>
-                        <Stack.Screen name='Cadastro' component={Cadastro} />
+                        <Stack.Screen name='Cadastro' component={Cadastro} options={{
+                            headerShown: false
+                        }} />
                         <Stack.Screen name='Principal' component={Principal} />
                         <Stack.Screen name='Sumario' component={Sumario} />
                     </Stack.Navigator>
